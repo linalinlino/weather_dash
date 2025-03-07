@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+        .weather-container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .search-box {
+            display: flex;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+        }
+        .search-box input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .search-box button {
+            margin-left: 10px;
+            padding: 10px 15px;
+            background: #ff9800;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .search-box button:hover {
+            background: #e68900;
+        }
+        .weather-info {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .icon {
+            font-size: 60px;
+            margin: 15px 0;
+        }
+        .weather-details {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" value="Dapa, Surigao del Norte">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info">
+            <div class='icon'><i class='fas fa-cloud-sun'></i></div>
+            <p class="weather-details">Partly Cloudy - 30°C</p>
+        </div>
+    </div>
+</body>
+</html>
